@@ -1,0 +1,5 @@
+﻿port 3306 = False
+=== proses mysqld ===
+(tidak ada mysqld berjalan)
+=== isi mysqlcheck6.txt (kalau sempat ditulis) ===
+(belum ditulis - command sebelumnya hang, kemungkinan mysqld sempat jalan di foreground)

@@ -1,0 +1,3 @@
+﻿mklink: Junction created for C:\fs_test <<===>> C:\Users\user\OneDrive\??????\Default Project\file-storage
+ada? True
+assets, config, database, includes, uploads, category.php, dashboard.php, delete.php, detail.php, download.php, edit.php, index.php, logout.php, mysqlcheck.txt, mysqlcheck2.txt, mysqlcheck3.txt, mysqlcheck4.txt, mysqlcheck5.txt, mysqlcheck7.txt, mysqlcheck8.txt, mysqld_err.txt, mysqld_out.txt, preview.php, settings.php, smoke1.txt, srv_err.txt, srv_out.txt, upload.php, verify1.txt, verify2.txt, verify3.txt, verify4.txt, verify5.txt, verify6.txt

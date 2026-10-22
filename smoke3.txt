@@ -1,0 +1,34 @@
+﻿=== 1. Login page GET (expect 200 + form) ===
+status=200 len=2307
+punya form login: True
+
+=== 2. Login POST admin/admin123 (expect 302 -> dashboard) ===
+csrf token diambil: True
+status login = 302
+Location = dashboard.php
+
+=== 3. Halaman dalam sesi login ===
+dashboard.php   status=200 len= 16853 phpError=False
+index.php       status=200 len= 17849 phpError=False
+upload.php      status=200 len= 18984 phpError=False
+category.php    status=200 len= 35623 phpError=False
+settings.php    status=200 len= 17848 phpError=False
+
+=== 4. Guard: halaman tanpa login harus redirect ke index.php ===
+dashboard.php   status=302 location=index.php
+upload.php      status=302 location=index.php
+settings.php    status=302 location=index.php
+category.php    status=302 location=index.php
+
+=== 5. CSRF: POST tanpa token harus 403 ===
+tanpa csrf status = 403 (harus 403)
+
+=== 6. Detail/preview/download id tidak ada (expect 404) ===
+detail.php?id=99999      status=302
+preview.php?id=99999     status=404
+download.php?id=99999    status=302
+edit.php?id=99999        status=302
+
+=== 7. Logout POST ===
+logout status = 302 location=index.php
+dashboard setelah logout = 302 location=index.php

@@ -1,0 +1,8 @@
+﻿exit? True
+exit code = 
+=== STDERR ===
+CreateProcess Failed (267).
+
+=== STDOUT ===
+=== data dir .err terbaru ===
+C:\laragon\data\mysql-8.4\DESKTOP-QT7DJ2V.err

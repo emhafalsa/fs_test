@@ -1,0 +1,6 @@
+﻿=== cari mysql.exe (laragon/xampp/php) ===
+C:\laragon\bin\mysql\mysql-8.4.3-winx64\bin\mysql.exe
+=== service MySQL/MariaDB ===
+(tidak ada service mysql/mariadb terdaftar)
+=== port 3306 ===
+TcpTestSucceeded = False

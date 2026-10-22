@@ -1,0 +1,27 @@
+﻿=== DESCRIBE files ===
++---------------+-----------------+------+-----+-------------------+-----------------------------------------------+
+| Field         | Type            | Null | Key | Default           | Extra                                         |
++---------------+-----------------+------+-----+-------------------+-----------------------------------------------+
+| id            | int unsigned    | NO   | PRI | NULL              | auto_increment                                |
+| file_name     | varchar(255)    | NO   |     | NULL              |                                               |
+| original_name | varchar(255)    | NO   |     | NULL              |                                               |
+| file_path     | varchar(255)    | NO   |     | NULL              |                                               |
+| file_type     | varchar(120)    | NO   |     | NULL              |                                               |
+| file_size     | bigint unsigned | NO   |     | 0                 |                                               |
+| category_id   | int unsigned    | YES  | MUL | NULL              |                                               |
+| description   | text            | YES  |     | NULL              |                                               |
+| uploaded_at   | datetime        | NO   | MUL | CURRENT_TIMESTAMP | DEFAULT_GENERATED                             |
+| updated_at    | datetime        | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED on update CURRENT_TIMESTAMP |
++---------------+-----------------+------+-----+-------------------+-----------------------------------------------+
+=== DESCRIBE categories ===
++-------------+--------------+------+-----+-------------------+-----------------------------------------------+
+| Field       | Type         | Null | Key | Default           | Extra                                         |
++-------------+--------------+------+-----+-------------------+-----------------------------------------------+
+| id          | int unsigned | NO   | PRI | NULL              | auto_increment                                |
+| name        | varchar(100) | NO   | UNI | NULL              |                                               |
+| description | text         | YES  |     | NULL              |                                               |
+| created_at  | timestamp    | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED                             |
+| updated_at  | timestamp    | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED on update CURRENT_TIMESTAMP |
++-------------+--------------+------+-----+-------------------+-----------------------------------------------+
+=== daftar kategori ===
+ERROR 1054 (42S22) at line 1: Unknown column 'category_name' in 'field list'

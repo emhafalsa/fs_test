@@ -1,0 +1,52 @@
+# =====================================================================
+# PROTEKSI FOLDER uploads/
+# ---------------------------------------------------------------------
+# File ini dibaca Apache (XAMPP/Laragon). Tujuannya:
+#   1. File .php (atau script lain) di dalam folder ini TIDAK boleh
+#      dieksekusi. Tanpa ini, penyerang bisa mengunggah file .php lalu
+#      memanggilnya lewat URL dan mengambil alih server.
+#   2. PHP ini dimatikan, sehingga folder uploads behaves seperti
+#      folder file statis biasa.
+#
+# CATATAN PENTING:
+#   Proteksi ini hanya bekerja bila Apache memakai mod_php.
+#   Bila project dijalankan dengan PHP-FPM atau server lain,
+#   pastikan folder uploads berada DI LUAR document root, atau
+#   batasi eksekusi lewat konfigurasi server Anda.
+# =====================================================================
+
+# --- Matikan PHP & mesin script di dalam folder ini ---
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+# --- Tolak semua request script ---
+# Menolak file berekstensi PHP maupun yang tidak punya ekstensi biasa
+<FilesMatch "\.(?i:php|php[0-9]|phtml|phar|pl|py|cgi|asp|aspx|jsp|sh|shtml|cgi|fcgi|inc)$">
+    Require all denied
+</FilesMatch>
+
+# --- Blokir akses ke file konfigurasi/rahasia bila ada di sini ---
+<FilesMatch "\.(?i:htaccess|htpasswd|ini|env|sql|log|conf|json|md)$">
+    Require all denied
+</FilesMatch>
+
+# --- Matikan directory listing (tampilkan isi folder) ---
+Options -Indexes -ExecCGI
+
+# --- Header keamanan saat file diakses langsung ---
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# --- Cegah file .htaccess ini ikut diunduh ---
+<Files ".htaccess">
+    Require all denied
+</Files>

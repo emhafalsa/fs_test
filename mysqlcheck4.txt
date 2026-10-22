@@ -1,0 +1,6 @@
+﻿data dir benar ada? True
+jumlah entri = 31
+#innodb_redo, #innodb_temp, db_mentalhealth, document_management, laravel, mysql, performance_schema, sekolah_app, sys, #ib_16384_0.dblwr, #ib_16384_1.dblwr, auto.cnf
+=== coba start mysqld ===
+pid = 14108 ; berjalan? False
+port 3306 = False

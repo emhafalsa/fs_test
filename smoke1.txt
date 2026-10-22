@@ -1,0 +1,10 @@
+﻿server pid=14076
+index.php        status= len=0
+dashboard.php    status= len=0
+index.php        status= len=0
+upload.php       status= len=0
+category.php     status= len=0
+settings.php     status= len=0
+=== cek PHP error/warning di output server ===
+Directory C:\Users\user\OneDrive\ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ\Default does not exist.
+

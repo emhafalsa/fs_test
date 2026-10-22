@@ -1,0 +1,14 @@
+﻿=== fungsi/const baru di bootstrap ===
+bootstrap.php:132  define('SETTINGS_FILE', __DIR__ . '/../storage_settings.json');
+bootstrap.php:140  function app_settings(): array
+bootstrap.php:154  if (! is_file(SETTINGS_FILE)) {
+bootstrap.php:158  $decoded = json_decode((string) file_get_contents(SETTINGS_FILE), true);
+bootstrap.php:173  function verify_login(string $username, string $password): bool
+bootstrap.php:191  function active_max_file_size(): int
+bootstrap.php:205  function ini_bytes_to_int(string $value): int
+=== pemakaian MAX_FILE_SIZE vs active_max_file_size ===
+settings.php:152  <dd><?= e(format_bytes(MAX_FILE_SIZE)) ?></dd>
+settings.php:180  oleh aplikasi (<code>MAX_FILE_SIZE</code> di
+bootstrap.php:43  define('MAX_FILE_SIZE', 10 * 1024 * 1024);
+bootstrap.php:191  function active_max_file_size(): int
+bootstrap.php:365  if ($file['size'] > MAX_FILE_SIZE) {

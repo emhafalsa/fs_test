@@ -1,0 +1,19 @@
+﻿=== php -l ===
+bootstrap.php        OK
+category.php         OK
+dashboard.php        OK
+database.php         OK
+delete.php           OK
+detail.php           OK
+download.php         OK
+edit.php             OK
+footer.php           OK
+header.php           OK
+index.php            OK
+logout.php           OK
+preview.php          OK
+settings.php         OK
+sidebar.php          OK
+upload.php           OK
+=== CJK check ===
+(bersih)

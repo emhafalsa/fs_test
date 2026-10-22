@@ -1,0 +1,20 @@
+﻿== total file ber-BOM: 0 ==
+=== php -l semua file .php ===
+category.php                       No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\category.php
+database.php                       No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\config\database.php
+dashboard.php                      No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\dashboard.php
+delete.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\delete.php
+detail.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\detail.php
+download.php                       No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\download.php
+edit.php                           No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\edit.php
+bootstrap.php                      No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\includes\bootstrap.php
+footer.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\includes\footer.php
+header.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\includes\header.php
+sidebar.php                        No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\includes\sidebar.php
+index.php                          No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\index.php
+logout.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\logout.php
+preview.php                        No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\preview.php
+settings.php                       No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\settings.php
+upload.php                         No syntax errors detected in C:\Users\user\OneDrive\πâëπé¡πâÑπâíπâ│πâê\Default Project\file-storage\upload.php
+=== karakter non-ASCII yang mencurigakan (CJK) di file php/css/js/sql ===
+file_storage.sql:17: --    Disimpan lebih dulu karena files 참조 kategori ini (foreign key).

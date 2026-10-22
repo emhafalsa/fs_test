@@ -1,0 +1,24 @@
+﻿=== karakter CJK tersisa ===
+(bersih)
+=== struktur file ===
+assets\css\style.css                          31.5 KB
+assets\js\script.js                           18.4 KB
+category.php                                  23.3 KB
+config\database.php                              3 KB
+dashboard.php                                  9.7 KB
+database\file_storage.sql                        3 KB
+delete.php                                       2 KB
+detail.php                                    11.1 KB
+download.php                                   2.8 KB
+edit.php                                      13.5 KB
+includes\bootstrap.php                        16.5 KB
+includes\footer.php                            4.9 KB
+includes\header.php                            2.3 KB
+includes\sidebar.php                             4 KB
+index.php                                     17.3 KB
+logout.php                                     0.9 KB
+preview.php                                    2.9 KB
+settings.php                                   8.3 KB
+upload.php                                    14.3 KB
+uploads\.htaccess                              1.8 KB
+verify1.txt                                    2.9 KB

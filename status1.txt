@@ -1,0 +1,10 @@
+﻿port 8777 = True
+php pid=13900
+=== smoke2 ===
+server pid=13900
+port 8777 = True
+=== stderr server ===
+(kosong)
+
+=== fs_srv_err ===
+(tidak ada)

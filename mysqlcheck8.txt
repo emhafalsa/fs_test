@@ -1,0 +1,3 @@
+﻿=== start mysqld detached ===
+pid=21780 exit? False
+port 3306 = True
